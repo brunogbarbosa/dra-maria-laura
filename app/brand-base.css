@@ -1,0 +1,18 @@
+/* Retained chapter foundation. Maria Laura brand tokens are in identity.css. */
+.essence-editorial { background: var(--paper); }
+.essence-values { background: var(--stone); }
+.essence-value { background: color-mix(in srgb, var(--paper) 85.10%, transparent); border-color: color-mix(in srgb, var(--paper) 65.88%, transparent); }
+.essence-value-icon { background: var(--champagne); color: var(--dark); }
+.essence-editorial-description, .essence-value p { color: var(--ink); }
+.gallery-chapter, .closing-chapter, .footer, .result-dialog { background: var(--dark); }
+.gallery-photo, .comparison { background: var(--dark); }
+.gallery-heading p, .footer-main > div { color: var(--champagne); }
+.ritual-chapter { background: var(--paper); }
+.social-chapter { background: var(--stone); }
+.closing-chapter { background: radial-gradient(circle at 80% 20%, var(--dark), var(--dark) 58%); }
+.menu-dialog { background: var(--paper); }
+.viewer-note { color: var(--champagne); }
+@media (max-width: 700px) {
+  .gallery-heading p { max-width: 30rem; }
+  .gallery-photo { aspect-ratio: .88; }
+}

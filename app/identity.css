@@ -1,0 +1,84 @@
+/* Maria Laura — ivory marble, stone, muted gold and mineral graphite.
+   Brand tokens are shared by every chapter, button, icon and decorative detail. */
+:root {
+  --paper: #F6F4EE;
+  --stone: #E7E3D8;
+  --champagne: #C7B487;
+  --gold: #8B7852;
+  --dark: #292B2A;
+  --ink: #363831;
+  --muted: #67685F;
+  --taupe: var(--gold);
+  --ivory: var(--paper);
+  --wine: var(--dark);
+  --rose: var(--gold);
+  --rose-deep: var(--gold);
+  --rose-light: var(--champagne);
+  --line: color-mix(in srgb, var(--gold) 25%, transparent);
+}
+.header, .header:not(.scrolled), .header.scrolled {
+  position:absolute; inset:0 0 auto; height:104px; margin:0; padding-inline:5%;
+  display:grid; grid-template-columns:1fr auto 1fr; gap:30px;
+  color:var(--paper); background:none; background-image:none; border:0;
+  box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none; z-index:30;
+}
+.desktop-nav {display:flex; gap:30px; justify-self:center}
+.brand-monogram {color:var(--champagne)}
+.header .brand-type small {color:var(--champagne)}
+.nav-appointment {justify-self:end; display:flex;align-items:center;gap:22px;min-height:48px;padding:10px 21px;border:1px solid var(--champagne);border-radius:99px;color:var(--paper);font-size:12px;background:color-mix(in srgb,var(--dark) 20%,transparent);transition:background .3s}
+.nav-appointment:hover {background:var(--gold)}
+.header .mobile-menu {display:none;background:none;backdrop-filter:none;border-color:var(--champagne);color:var(--paper)}
+.campaign {background:var(--dark)}
+.campaign-original {filter:none;transform:none;object-position:center top}
+.campaign::after {background:none;mix-blend-mode:normal}
+.campaign-topline {font-size:9px}
+.campaign-title-line:nth-child(2) {padding-left:.13em;color:var(--paper);font-style:normal}
+.campaign-subtitle {max-width:420px}
+.campaign-kicker {font-size:10px;letter-spacing:.18em}
+.campaign-seal {color:var(--champagne)}
+.campaign-cta {background:var(--champagne);border-color:var(--champagne);color:var(--dark)}
+.campaign-cta:hover,.campaign-cta:focus-visible {background:var(--paper)}
+.gallery-item>button:hover img {filter:none}
+.gallery-end p, .gallery-heading p, .closing-bottom p, .closing-bottom>span, .footer-main>div, .footer-bottom {color:var(--stone)}
+.comparison {width:auto;max-width:100%;height:100%;max-height:100%;flex:none}
+.comparison.vertical {width:auto;height:100%;max-width:100%}
+.comparison .compare-half {background-repeat:no-repeat}
+.viewer-stage {overflow:hidden}
+.viewer-range {color:var(--paper)}
+@media(min-width:701px) {
+ .campaign-portrait {inset:0 0 0 42%;}
+ .campaign::before {background:linear-gradient(90deg,var(--dark) 0%,var(--dark) 28%,color-mix(in srgb,var(--dark) 95%,transparent) 39%,color-mix(in srgb,var(--dark) 65%,transparent) 49%,color-mix(in srgb,var(--dark) 14%,transparent) 64%,transparent 74%),linear-gradient(0deg,color-mix(in srgb,var(--dark) 75%,transparent),transparent 26%);}
+ .campaign-portrait {mask-image:linear-gradient(90deg,transparent,black 30%);}
+ .campaign-inner {padding-top:130px}
+ .campaign-copy {width:62%;margin-bottom:110px}
+ .campaign h1 {font-size:clamp(78px,7.55vw,142px);line-height:.91}
+ .campaign-editorial {top:auto;bottom:280px;right:5%;}
+ .essence-smile {aspect-ratio:1086/1448;width:44%;right:0;top:28px;border-radius:45% 0 0 42%;}
+ .essence-smile img {object-fit:contain;object-position:center top}
+}
+@media(min-width:701px) and (max-width:1100px) {
+ .header {grid-template-columns:1fr auto;gap:15px}
+ .desktop-nav {display:none}
+ .header .mobile-menu {display:grid;justify-self:end}
+ .nav-appointment {display:none}
+ .campaign h1 {font-size:8vw}
+}
+@media(max-width:700px) {
+ .header,.header:not(.scrolled) {height:86px;padding-inline:6%;grid-template-columns:1fr auto;gap:10px}
+ .desktop-nav,.nav-appointment {display:none}
+ .header .mobile-menu {display:grid;background:none;backdrop-filter:none}
+ .campaign-original {filter:none;object-position:center top}
+ .campaign::before {background:linear-gradient(180deg,color-mix(in srgb,var(--dark) 62%,transparent) 0%,transparent 18%,color-mix(in srgb,var(--dark) 8%,transparent) 35%,color-mix(in srgb,var(--dark) 84%,transparent) 58%,var(--dark) 74%,var(--dark) 100%)}
+ .campaign::after {background:linear-gradient(90deg,color-mix(in srgb,var(--dark) 28%,transparent),transparent 38%)}
+ .campaign-copy {margin-bottom:95px}
+ .campaign h1 {font-size:clamp(52px,12.8vw,88px);line-height:.94}
+ .campaign-subtitle {max-width:330px}
+ .campaign-kicker {font-size:8px;gap:7px;letter-spacing:.08em}
+ .campaign-kicker::before {width:15px}
+ .campaign-topline {font-size:8px}
+ .essence-smile {width:100%;margin:30px 0 0;aspect-ratio:1086/1448}
+ .essence-smile img {object-fit:contain;object-position:center top}
+ .comparison.vertical {width:100%;height:auto;max-height:100%}
+ .viewer-bottom {gap:12px}
+ .viewer-mode {font-size:11px;min-height:44px}
+}
