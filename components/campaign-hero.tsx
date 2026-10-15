@@ -14,10 +14,7 @@ export function CampaignHero() {
     <div className="campaign-contour" aria-hidden="true" />
     <figure className="campaign-portrait">
       <div className="campaign-silhouette">
-        <picture>
-          <source media="(max-width: 700px)" srcSet={site.images.about} />
-          <Image className="campaign-original" src={site.images.hero} alt="Retrato da Dra. Maria Laura" fill preload sizes="(max-width: 700px) 100vw, 60vw" />
-        </picture>
+        <Image className="campaign-original" src={site.images.hero} alt="Retrato da Dra. Maria Laura" fill preload sizes="(max-width: 700px) 100vw, 60vw" />
       </div>
     </figure>
     <div className="campaign-inner">

@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   metadataBase,
   title: site.seo.title,
   description: site.seo.description,
+  openGraph: {
+    title: site.seo.title,
+    description: site.seo.description,
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{ url: '/images/maria-laura-og.jpg', width: 1672, height: 941, alt: 'Dra. Maria Laura Nascimento — Odontologia Estética em Franca, CRO 155071' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: site.seo.title,
+    description: site.seo.description,
+    images: ['/images/maria-laura-og.jpg'],
+  },
   ...(site.seo.url ? { alternates: { canonical: '/' } } : {}),
 };
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {

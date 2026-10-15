@@ -45,4 +45,4 @@ Inspirada no marfim marmorizado e nos veios dourados dos destaques enviados. Tod
 
 Tipografia Cormorant Garamond e Manrope, servidas localmente, com licenças na pasta de fontes. A navegação e o hero mantêm composições próprias para desktop e mobile. O header é absoluto, acima da foto, e não possui fundo, gradiente, borda, sombra ou blur.
 
-O favicon está em `app/icon.svg`. Nenhuma imagem OG foi criada ou incluída.
+O favicon está em `app/icon.svg`. A imagem de compartilhamento fornecida está em `public/images/maria-laura-og.jpg`, convertida para JPEG progressivo e otimizada sem recortar a composição. Open Graph e Twitter usam esse arquivo. O hero usa o mesmo retrato em desktop e mobile; cada uma das quatro seções de retratos possui uma fotografia diferente.
