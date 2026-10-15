@@ -67,6 +67,7 @@
  .header,.header:not(.scrolled) {height:86px;padding-inline:6%;grid-template-columns:1fr auto;gap:10px}
  .desktop-nav,.nav-appointment {display:none}
  .header .mobile-menu {display:grid;background:none;backdrop-filter:none}
+ .campaign-silhouette {inset:clamp(52px,16vw,84px) 0 clamp(-84px,-16vw,-52px);mask-image:linear-gradient(180deg,transparent,black 40px)}
  .campaign-original {filter:none;object-position:center top}
  .campaign::before {background:linear-gradient(180deg,color-mix(in srgb,var(--dark) 62%,transparent) 0%,transparent 18%,color-mix(in srgb,var(--dark) 8%,transparent) 35%,color-mix(in srgb,var(--dark) 84%,transparent) 58%,var(--dark) 74%,var(--dark) 100%)}
  .campaign::after {background:linear-gradient(90deg,color-mix(in srgb,var(--dark) 28%,transparent),transparent 38%)}
@@ -75,7 +76,7 @@
  .campaign-subtitle {max-width:330px}
  .campaign-kicker {font-size:8px;gap:7px;letter-spacing:.08em}
  .campaign-kicker::before {width:15px}
- .campaign-topline {font-size:8px}
+ .campaign-topline {display:none}
  .essence-smile {width:100%;margin:30px 0 0;aspect-ratio:1086/1448}
  .essence-smile img {object-fit:contain;object-position:center top}
  .comparison.vertical {width:100%;height:auto;max-height:100%}
